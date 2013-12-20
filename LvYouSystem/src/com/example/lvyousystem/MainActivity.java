@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
         Button login=(Button)findViewById(R.id.login);
         login.setOnClickListener(new OnClickListener() {
 			@Override
@@ -26,6 +27,7 @@ public class MainActivity extends Activity {
         sgup.setOnClickListener(new OnClickListener() {
         	@Override
         	public void onClick(View v) {
+        		
         		Intent intent2 = new Intent(MainActivity.this, SupActivity.class);
 				startActivity(intent2);
         	}

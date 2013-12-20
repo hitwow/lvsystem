@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lcteam"
+    android:gravity="left">
+    
+    <TextView
+        android:id="@+id/cname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="9pt"     
+        android:text="@string/cname" />
+    
+    <EditText 
+        android:id="@+id/etcname"
+        android:hint="@string/etcname"
+        android:width="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cname"
+        android:layout_alignBottom="@id/cname"
+        android:layout_marginLeft="10dp"
+        android:selectAllOnFocus="true"/>
+    
+    <TextView
+        android:id="@+id/stime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/cname"
+        android:textSize="9pt"     
+        android:text="@string/stime" />
+    
+    <EditText 
+        android:id="@+id/etstime"
+        android:hint="@string/etstime"
+        android:width="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/stime"
+        android:layout_alignBottom="@id/stime"
+        android:layout_marginLeft="10dp"
+        android:selectAllOnFocus="true"/>
+    
+    <TextView
+        android:id="@+id/etime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/stime"
+        android:textSize="9pt"     
+        android:text="@string/etime" />
+    
+    <EditText 
+        android:id="@+id/etetime"
+        android:hint="@string/etetime"
+        android:width="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/etime"
+        android:layout_alignBottom="@id/etime"
+        android:layout_marginLeft="10dp"
+        android:selectAllOnFocus="true"/>
+    
+    <TextView
+        android:id="@+id/nmem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/etime"
+        android:textSize="9pt"     
+        android:text="@string/nmem" />
+    
+    <Button
+        android:id="@+id/creteam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nmem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="@string/creteam"
+        android:width="300dp" />
+
+    <EditText
+        android:id="@+id/etnmem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nmem"
+        android:layout_alignLeft="@+id/etetime"
+        android:hint="@string/etnmem"
+        android:selectAllOnFocus="true"
+        android:width="250dp" >
+
+
+    </EditText>
+
+</RelativeLayout>

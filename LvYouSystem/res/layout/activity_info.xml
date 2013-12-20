@@ -1,12 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/lsu"
-    android:gravity="left">
-
-    <TextView
+    android:id="@+id/linfo"
+    android:gravity="left" >
+    
+	<TextView
         android:id="@+id/uname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,56 +17,14 @@
     
     <EditText 
         android:id="@+id/etuname"
-        android:hint="@string/etuname"
         android:width="250dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/uname"
         android:layout_alignBottom="@id/uname"
-        android:layout_marginLeft="10dp"
-        android:selectAllOnFocus="true"/>
-    
-    <TextView
-        android:id="@+id/psd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/uname"
-        android:textSize="9pt"     
-        android:text="@string/Psd" />
-    
-    <EditText 
-        android:id="@+id/etpswd"
-        android:hint="@string/etpswd"
-        android:width="250dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/psd"
-        android:layout_alignBottom="@id/psd"
-        android:layout_marginLeft="30dp"
-        android:selectAllOnFocus="true"/>
-    
-    <TextView
-        android:id="@+id/cfpswd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/psd"
-        android:textSize="9pt"     
-        android:text="@string/cfpswd" />
-    
-    <EditText 
-        android:id="@+id/etcfpswd"
-        android:hint="@string/etcfpswd"
-        android:width="250dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/cfpswd"
-        android:layout_alignBottom="@id/cfpswd"
-        android:layout_marginLeft="30dp"
-        android:selectAllOnFocus="true"/>
+        android:editable="false"
+        android:cursorVisible="false"
+        android:layout_marginLeft="10dp"/>
     
     <TextView
         android:id="@+id/tname"
@@ -74,20 +32,20 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
-        android:layout_below="@id/cfpswd"
+        android:layout_below="@id/uname"
         android:textSize="9pt"     
         android:text="@string/Tname" />
     
     <EditText 
         android:id="@+id/ettname"
-        android:hint="@string/etTname"
         android:width="250dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/tname"
         android:layout_alignBottom="@id/tname"
         android:layout_marginLeft="30dp"
-        android:selectAllOnFocus="true"/>
+        android:editable="false"
+        android:cursorVisible="false"/>
     
     <TextView
         android:id="@+id/age"
@@ -101,14 +59,14 @@
     
     <EditText 
         android:id="@+id/etage"
-        android:hint="@string/etage"
         android:width="250dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/age"
         android:layout_alignBottom="@id/age"
         android:layout_marginLeft="30dp"
-        android:selectAllOnFocus="true"/>
+        android:editable="false"
+        android:cursorVisible="false"/>
     
     <TextView
         android:id="@+id/work"
@@ -122,14 +80,14 @@
     
     <EditText 
         android:id="@+id/etwork"
-        android:hint="@string/etwork"
         android:width="250dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/work"
         android:layout_alignBottom="@id/work"
         android:layout_marginLeft="30dp"
-        android:selectAllOnFocus="true"/>
+        android:editable="false"
+        android:cursorVisible="false"/>
     
     <TextView
         android:id="@+id/phone"
@@ -143,14 +101,14 @@
     
     <EditText 
         android:id="@+id/etphone"
-        android:hint="@string/etphone"
         android:width="250dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/phone"
         android:layout_alignBottom="@id/phone"
         android:layout_marginLeft="30dp"
-        android:selectAllOnFocus="true"/>
+        android:editable="false"
+        android:cursorVisible="false"/>
     
     <TextView
         android:id="@+id/email"
@@ -164,21 +122,12 @@
     
     <EditText 
         android:id="@+id/etemail"
-        android:hint="@string/etemail"
         android:width="250dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/email"
         android:layout_alignBottom="@id/email"
         android:layout_marginLeft="30dp"
-        android:selectAllOnFocus="true"/>
-    
-     <Button
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:text="@string/submit" />
-
+        android:editable="false"
+        android:cursorVisible="false"/>
 </RelativeLayout>

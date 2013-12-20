@@ -1,50 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:shrinkColumns="0, 2"
-    >
-    <TableRow
-        android:layout_width="fill_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llogin"
+    android:gravity="left">
+	
+    <ImageView
+        android:id="@+id/limage"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        >
-
-        <TextView
-            android:id="@+id/uname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:text="@string/Uname" />
-
-        <EditText android:id="@+id/etuname"
-            android:hint="@string/etuname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:selectAllOnFocus="true"
-            />
-    </TableRow>
-    <TableRow
-        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/log" />
+    
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        >
-        <TextView android:id="@+id/psd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Psd"
-            android:ellipsize="end"
-            />
-        <EditText android:id="@+id/etpswd"
-            android:hint="@string/etpswd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:selectAllOnFocus="true"
-            />
-    </TableRow>
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="9pt"
+        android:layout_below="@id/limage"        
+        android:text="@string/Uname" />
+    
+    <EditText 
+        android:id="@+id/etuname"
+        android:hint="@string/etuname"
+        android:width="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/uname"
+        android:layout_alignBottom="@id/uname"
+        android:layout_marginLeft="10dp"
+        android:selectAllOnFocus="true"/>
+    
+    <TextView 
+        android:id="@+id/psd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="9pt"
+        android:layout_below="@id/uname"  
+        android:text="@string/Psd"/>
+    
+    <EditText 
+        android:id="@+id/etpswd"
+        android:hint="@string/etpswd"
+        android:width="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/psd"
+        android:layout_alignBottom="@id/psd"
+        android:layout_marginLeft="30dp"
+        android:selectAllOnFocus="true"/>
 
     <Button
         android:id="@+id/enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Enter" />
-    
-</TableLayout>
+        android:layout_below="@+id/psd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="@string/Enter"
+        android:width="300dp" />
+
+    </RelativeLayout>

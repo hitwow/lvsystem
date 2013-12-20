@@ -1,73 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:shrinkColumns="0, 2"
-    >
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <TextView
-            android:id="@+id/location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:text="@string/location" />
-
-        <EditText android:id="@+id/etlocation"
-            android:hint="@string/etlocation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:selectAllOnFocus="true"
-            />
-    </TableRow>
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        >
-        <TextView android:id="@+id/pnum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pnum"
-            android:ellipsize="end"
-            />
-        <EditText android:id="@+id/etpnum"
-            android:hint="@string/etpnum"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:selectAllOnFocus="true"
-            />
-    </TableRow>
-    <TableRow
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        >
-        <TextView android:id="@+id/money"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/money"
-            android:ellipsize="end"
-            />
-        <EditText android:id="@+id/etmoney"
-            android:hint="@string/etmoney"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:selectAllOnFocus="true"
-            />
-    </TableRow>
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llsuc"
+>
+    
     <Button
-        android:id="@+id/search"
+        android:id="@+id/vself"
+        style="@style/AppTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/search" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/vself" />
 
+    <Button
+        android:id="@+id/cself"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/cself" />
+    
     <Button
         android:id="@+id/inmap"
+        style="@style/AppTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:text="@string/inmap" />
     
-</TableLayout>
+    <Button
+        android:id="@+id/cteam"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vself"
+        android:layout_below="@+id/inmap"
+        android:layout_marginTop="74dp"
+        android:text="@string/cteam" />
+
+    <Button
+        android:id="@+id/steam"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cteam"
+        android:layout_alignRight="@id/cself"
+        android:text="@string/steam" />
+
+    
+    
+</RelativeLayout>
